@@ -33,7 +33,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
         combo_enterleft {
             timeout-ms = <50>;
             key-positions = <31 32>;
-            bindings = <&kp ENTER>;
+            bindings = <&kp ESC>;
         };
     };    
     
@@ -99,7 +99,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
       bindings = <
         &trans &trans &trans &trans &trans &trans &trans                                           &trans &trans &trans &trans &trans &trans &trans
         &none &none     &none    &none    &none      &none  &none                                                            &none &kp K_COPY   &kp K_CUT  &kp K_PASTE     &kp K_UNDO    &kp K_REDO    &none
-        &none   &kp LCTRL &kp LALT &kp LGUI &kp LSHFT  &none  &none           &none &none &none &none &none &none  &kp LEFT  &kp DOWN &kp UP &kp RIGHT &none
+        &none   &kp LCTRL &kp LALT &kp LGUI &kp LSHFT  &none  &none           &none &none &none &none &none   &kp LEFT  &kp DOWN &kp UP &kp RIGHT &none &none
         &none &none     &none    &none    &none      &none                            &none &none &none  &none  &none &none &none &none
         &none &none &none &kp HOME &kp END                &none &none   &none  &none &none &none              &kp PG_UP &kp PG_DN  &none &none &none
       >;
